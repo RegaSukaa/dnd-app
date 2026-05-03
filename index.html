@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>D&D Лист персонажа</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <header id="app-header">
+      <h1>D&D Лист персонажа</h1>
+      <button id="btn-save" class="tg-btn">Сохранить</button>
+    </header>
+    <main id="main-content"></main>
+    <nav id="tab-bar">
+      <button class="tab active" data-tab="create">Создание</button>
+      <button class="tab" data-tab="sheet">Лист</button>
+      <button class="tab" data-tab="spells">Заклинания</button>
+    </nav>
+  </div>
+
+  <!-- Модальное окно для выбора (будет наполняться динамически) -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="js/tg-init.js"></script>
+  <script src="js/data/rules-data.js"></script>
+  <script src="js/data/races.js"></script>
+  <script src="js/data/classes.js"></script>
+  <script src="js/data/backgrounds.js"></script>
+  <script src="js/data/feats.js"></script>
+  <script src="js/data/spells.js"></script>
+  <script src="js/data/equipment.js"></script>
+  <script src="js/engine/dice.js"></script>
+  <script src="js/engine/character.js"></script>
+  <script src="js/engine/rules.js"></script>
+  <script src="js/ui/tabs.js"></script>
+  <script src="js/ui/creator.js"></script>
+  <script src="js/ui/sheet.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
